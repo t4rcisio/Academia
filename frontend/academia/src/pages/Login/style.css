@@ -21,6 +21,10 @@
   height: 700px;
 }
 
+.boxLogin {
+  margin-top: 50px;
+}
+
 button.MuiButton-root {
   margin: 50px;
   background-color: var(--primary-color-hover);
