@@ -83,7 +83,14 @@ function Footer() {
         </div>
 
         <span className="infos">
-          Laboratório de Engenharia de Software I <br></br>
+          <Link
+            underline="hover"
+            color={"#FFFFFF"}
+            className="link"
+            href="https://eduardocunha11.github.io/firstblog/gsi526-lab.html"
+          >
+            Laboratório de Engenharia de Software I <br></br>
+          </Link>
           Copyright © {date()}
         </span>
       </section>
