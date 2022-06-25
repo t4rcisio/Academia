@@ -1,0 +1,26 @@
+.main-footer {
+  justify-content: space-around;
+  align-items: center;
+  height: 130px;
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--white);
+  background-color: var(--primary-color-hover);
+  display: flex;
+}
+
+.authors {
+  text-align: -webkit-center;
+  margin-top: 10px;
+}
+
+.authors_links {
+  display: flex;
+  max-width: min-content;
+  text-align: -webkit-center;
+  align-items: center;
+}
+
+.infos {
+  text-align: center;
+}
