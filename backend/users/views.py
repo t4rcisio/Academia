@@ -3,6 +3,7 @@ from rest_framework.response import Response
 from rest_framework.exceptions import AuthenticationFailed, NotFound
 from .serializers import UserSerializer
 from .models import User
+from .check_jwt import check_jwt
 import jwt, datetime
 
 from environ import Env
@@ -46,3 +47,10 @@ class LoginView(APIView):
     }
 
     return response
+
+class LogoutView(APIView):
+  def post(self, request):
+    response = Response()
+    response.delete_cookie('jwt')
+
+    return Response()
