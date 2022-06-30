@@ -1,8 +1,10 @@
 from django.urls import path
-from .views import RegisterView, LoginView, LogoutView
+from rest_framework.routers import format_suffix_patterns
 
-urlpatterns = [
-  path('register', RegisterView.as_view()),
-  path('login', LoginView.as_view()),
-  path('logout', LogoutView.as_view())
-]
+from .views import RegisterView, LoginView, LogoutView
+from .adapters import DefaultRouterWithSimpleViews
+
+user_routes = DefaultRouterWithSimpleViews()
+user_routes.register('register', RegisterView, 'Register-user')
+user_routes.register('login', LoginView, 'Login')
+user_routes.register('logout', LogoutView, 'Logout')
