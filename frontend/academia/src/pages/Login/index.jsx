@@ -17,7 +17,7 @@ import Select from "@mui/material/Select";
 
 import "./style.css";
 
-export default function InputAdornments() {
+export default function Login() {
   const [showPassword, setShowPassword] = useState(false);
 
   const { control } = useForm({
