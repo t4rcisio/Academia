@@ -1,0 +1,18 @@
+.userRegister-main {
+  background-color: var(--white);
+  text-align: -webkit-center;
+}
+
+.userRegister-title {
+  margin: 0;
+  padding: 10px;
+}
+
+.user-registration {
+  display: inline-flex;
+  align-items: center;
+}
+
+.plan {
+  margin-left: 100px;
+}
