@@ -22,7 +22,7 @@ function User() {
   return (
     <div ClassName="main_user">
       <Box>
-        <h2>Dados principais</h2>
+        <h2>Dados pessoais</h2>
         <Controller
           name="Name"
           control={control}
