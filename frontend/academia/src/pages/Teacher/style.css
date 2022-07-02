@@ -1,0 +1,9 @@
+.teacher-main {
+  background-color: var(--white);
+  text-align: -webkit-center;
+}
+
+.teacher-title {
+  margin: 0;
+  padding: 30px;
+}
